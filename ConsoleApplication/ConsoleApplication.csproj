@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\First\First\AsteriscReplacer.cs">
+      <Link>AsteriscReplacer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\First\First\CharExtensions.cs">
+      <Link>CharExtensions.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\First\First\LongestStringFinder.cs">
+      <Link>LongestStringFinder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\First\First\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\First\First\SquareMatrix.cs">
+      <Link>SquareMatrix.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="morelinq" Version="2.8.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomTestFramework\CustomTestFramework.TestAdapter.csproj" />
+  </ItemGroup>
+</Project>

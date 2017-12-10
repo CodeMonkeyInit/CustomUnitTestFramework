@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" ?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="CustomTestFramework.CoreVSIX.acde1ae8-0f64-45e2-9935-a5f15c6d1dce" Version="0.51" Language="en-US" Publisher="Кулиев Денис" />
+        <DisplayName>CustomTestFramework</DisplayName>
+        <Description xml:space="preserve">CustomTestFramework Core</Description>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="CustomTestFramework.Core" Path="|CustomTestFramework.Core|" />
+        <Asset Type="UnitTestExtension" d:Source="Project" d:ProjectName="CustomTestFramework.Core" Path="|CustomTestFramework.Core|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+</PackageManifest>
